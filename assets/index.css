@@ -1,5 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Anisha, sans-serif;
+}
 
+ion-icon {
+  color: #198754;
+}
 
-#navbarNav li {
-    color: white;
+main {
+    height: 100vh;
 }

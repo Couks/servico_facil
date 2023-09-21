@@ -1,4 +1,4 @@
-<header class="navbar navbar-expand-lg navbar-light bg-dark mb-4">
+<header class="navbar navbar-expand-lg navbar-light bg-dark mb-4 sticky-top">
   <div class="container">
     <a href="/" class="navbar-brand">
       <img
@@ -9,32 +9,21 @@
       />
     </a>
 
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
+      <ul class="navbar-nav ms-auto justify-content-between">
         <li class="nav-item">
           <a class="nav-link" href="/">
             <ion-icon name="home"></ion-icon> Home
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/solicitar-servico">
+          <a class="nav-link" href="../views/solicitar-servico.php">
             <ion-icon name="hammer"></ion-icon> Solicitar Serviço
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/login">
+          <a class="nav-link" href="../views/login.php">
             <ion-icon name="person-circle"></ion-icon> Login
           </a>
         </li>
@@ -43,22 +32,11 @@
   </div>
 
   <style>
-	body {
-      margin: 0;
-      padding: 0;
-      font-family: Anisha, sans-serif;
-    }
-
-	ion-icon {
-		color: #198754;
-	}
     .nav-link {
       color: white;
     }
     .nav-link:hover {
       color: #198754;
     }
-
-    
   </style>
 </header>

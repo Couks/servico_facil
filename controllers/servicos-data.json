@@ -1,0 +1,11 @@
+{
+    "categorias": ["Eletricista", "Chaveiro", "Marceneiro", "Encanador", "Pintor"],
+    "servicos": {
+      "Eletricista": ["Instalação Elétrica", "Reparo de Tomadas", "Troca de Lâmpadas", "Manutenção de Quadro de Força"],
+      "Chaveiro": ["Chave Residencial", "Chave Automotiva", "Chave Cofre", "Chaveiro 24 Horas"],
+      "Marceneiro": ["Móveis Planejados", "Reparo de Móveis", "Instalação de Prateleiras", "Restauração de Móveis"],
+      "Encanador": ["Reparo de Vazamentos", "Instalação de Tubulações", "Desentupimento", "Manutenção de Aquecedor"],
+      "Pintor": ["Pintura Residencial", "Pintura Comercial", "Pintura de Fachadas", "Pintura de Móveis"]
+    }
+  }
+  
