@@ -1,3 +1,11 @@
+<?php
+$validacao_email = $_GET['email'];
+$validacao_senha = $_GET['senha'];
+
+setcookie($validacao_email, true, secure: true, httponly: true);
+setcookie($email."-senha", $validacao_senha, secure: true, httponly: true);
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -8,11 +16,12 @@
     <link rel="stylesheet" href="../assets/index.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
 </head>
 
 <body class="bg-light">
+
+
 
     <main class="container mt-5 p-3">
         <div class="row justify-content-center align-items-center">

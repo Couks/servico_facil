@@ -15,6 +15,22 @@
 
     <?php
     include("../includes/header.html");
+
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $emailbonitao = str_replace(".", "_", $_POST["email-login"]);
+
+        if ($_COOKIE[$emailbonitao.'-senha'] == $_POST["senha-login"]) {
+            if (!isset($_COOKIE[$emailbonitao])) {
+                echo "E-mail não confirmado";
+            } else {
+                echo "Email confirmado";
+            }
+        } else {
+            echo "Senha incorreta";
+        }
+    }
+
     ?>
 
     <main>
@@ -24,15 +40,15 @@
                     <h1 class="mb-3">Login</h1>
                     <hr>
                     <div class="card-body">
-                        <form action="POST">
+                        <form action="login.php" method="POST">
                             <div class="mb-3">
                                 <label for="email-login" class="form-label fw-bold">E-mail</label>
-                                <input type="email" class="form-control" id="email-login" aria-describedby="emailHelp" placeholder="Digite seu e-mail">
+                                <input type="email" class="form-control" id="email-login" name="email-login" aria-describedby="emailHelp" placeholder="Digite seu e-mail">
                                 <small id="emailHelp" class="form-text text-muted">Nós nunca vamos compartilhar seu e-mail com ninguém.</small>
                             </div>
                             <div class="mb-3">
                                 <label for="pass" class="form-label fw-bold">Senha</label>
-                                <input type="password" class="form-control" id="pass" placeholder="Digite sua senha de acesso">
+                                <input type="password" class="form-control" id="senha-login" name="senha-login" placeholder="Digite sua senha de acesso">
                             </div>
 
                             <button type="submit" class="btn btn-success btn-block col-md-12">Enviar</button>
