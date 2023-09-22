@@ -48,7 +48,7 @@
                                 value="<?= $mensagem ?>" readonly>
                         </div>
                     </div>
-                    <a href="lista-solicitacoes.php" class="col-md-12 btn btn-success btn-block mt-3">Lista de Solicitações</a>
+                    <a href="listagem-solicitacoes.php" class="col-md-12 btn btn-success btn-block mt-3">Lista de Solicitações</a>
                 </div>
             </div>
         </div>
